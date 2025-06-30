@@ -4,8 +4,12 @@ on:
     types: [opened, ready_for_review, synchronize, reopened, labeled, unlabeled]
     branches:
       - main
+permissions:
+  contents: read
 jobs:
   setup-environment:
+    permissions:
+      issues: write
     runs-on: ubuntu-latest
     if: ${{ (github.actor == 'renovate[bot]' || contains(github.event.pull_request.labels.*.name, 'renovatebot')) }}
     steps:
