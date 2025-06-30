@@ -4,10 +4,17 @@ on:
     types: [opened, ready_for_review, synchronize, reopened, labeled, unlabeled]
     branches:
       - main
+
+permissions:
+  contents: read
+
 jobs:
   setup-environment:
     runs-on: ubuntu-latest
     if: ${{ (github.actor == 'renovate[bot]' || contains(github.event.pull_request.labels.*.name, 'renovatebot')) }}
+    permissions:
+      contents: write
+      pull-requests: write
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
