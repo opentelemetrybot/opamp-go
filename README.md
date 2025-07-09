@@ -45,9 +45,9 @@ Approvers ([@open-telemetry/opamp-go-approvers](https://github.com/orgs/open-tel
 
 Emeritus Approvers
 
-- [Alex Boten](https://github.com/codeboten), Lightstep
-- [Przemek Maciolek](https://github.com/pmm-sumo), Sumo Logic
-- [Srikanth Chekuri](https://github.com/srikanthccv), signoz.io
+- [Alex Boten](https://github.com/codeboten)
+- [Przemek Maciolek](https://github.com/pmm-sumo)
+- [Srikanth Chekuri](https://github.com/srikanthccv)
 
 Maintainers ([@open-telemetry/opamp-go-maintainers](https://github.com/orgs/open-telemetry/teams/opamp-go-maintainers)):
 
