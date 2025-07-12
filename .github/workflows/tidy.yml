@@ -8,6 +8,8 @@ permissions:
   contents: read
 jobs:
   setup-environment:
+    permissions:
+      pull-requests: write # required for removing labels from PRs
     runs-on: ubuntu-latest
     if: ${{ (github.actor == 'renovate[bot]' || contains(github.event.pull_request.labels.*.name, 'renovatebot')) }}
     steps:
