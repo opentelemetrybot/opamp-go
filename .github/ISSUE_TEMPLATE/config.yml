@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: OpenTelemetry Community
+    url: https://opentelemetry.io/community/
+    about: Connect with the OpenTelemetry community
+  - name: CNCF Slack
+    url: https://slack.cncf.io/
+    about: Join the #otel-opamp Slack channel
